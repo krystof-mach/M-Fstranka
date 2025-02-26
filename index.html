@@ -3,54 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firemní stránka</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Fotografické služby - Domů</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>M&F – Foto</h1>
         <nav>
             <ul>
-                <li><a href="#about">O nás</a></li>
-                <li><a href="#services">Služby</a></li>
-                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="onas.html">O nás</a></li>
+                <li><a href="cenik.html">Ceník</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>O nás</h2>
-        <p>Jsme profesionální firma nabízející špičkové služby v oblasti fotografování.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sint.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sint.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sint.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sint.</p>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Profesionální fotografické služby</h1>
+            <p>Zachycujeme vaše vzpomínky s uměním a vášní.</p>
+            <a href="kontakt.html" class="cta-button">Kontaktujte nás</a>
+        </div>
     </section>
 
-    <section id="services">
+    <section class="services">
         <h2>Naše služby</h2>
-        <div class="service">
-            <h3>Portréty</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-             Sequi, deleniti expedita veritatis repellat doloribus quo distinctio reiciendis possimus nostrum,
-             voluptatem dignissimos laudantium consequatur ut eos, laborum quia enim voluptate similique!</p>
-        </div>
-        <div class="service">
-            <h3>Focení nemovitostí</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Placeat nam modi cupiditate possimus, voluptatem enim laborum incidunt ut adipisci.
-             Est asperiores quas laborum aut corrupti tempore cupiditate quia sequi aperiam. </p>
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="placeholder-service1.jpg" alt="Svatební fotografie">
+                <h3>Svatební fotografie</h3>
+                <p>Krásné a emotivní zachycení vašeho svatebního dne.</p>
+            </div>
+            <div class="service-item">
+                <img src="placeholder-service2.jpg" alt="Portrétní fotografie">
+                <h3>Portrétní fotografie</h3>
+                <p>Profesionální portréty pro osobní i komerční účely.</p>
+            </div>
+            <div class="service-item">
+                <img src="placeholder-service3.jpg" alt="Produktová fotografie">
+                <h3>Produktová fotografie</h3>
+                <p>Atraktivní fotografie vašich produktů pro online i tiskovou prezentaci.</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p>Email: infomail@nigger.com</p>
-        <p>Telefon: +420 123 456 789</p>
+    <section class="gallery-preview">
+        <h2>Ukázky naší práce</h2>
+        <div class="gallery-grid">
+            <img src="placeholder-gallery1.jpg" alt="Galerie foto 1">
+            <img src="placeholder-gallery2.jpg" alt="Galerie foto 2">
+            <img src="placeholder-gallery3.jpg" alt="Galerie foto 3">
+            <img src="placeholder-gallery4.jpg" alt="Galerie foto 4">
+        </div>
+        <a href="#" class="cta-button">Prohlédněte si galerii</a>
     </section>
 
     <footer>
-        <p>&copy; 2025 M&F. Všechna práva vyhrazena.</p>
+        <p>&copy; 2025 Fotografické služby. Všechna práva vyhrazena.</p>
     </footer>
+
 </body>
 </html>

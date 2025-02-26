@@ -1,0 +1,66 @@
+/* cenik.css - cenik.html */
+.price-list-section {
+    background-color: #fff;
+    padding: 4rem 0;
+}
+
+.price-list-section .container {
+    max-width: 900px;
+}
+
+.price-list-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+}
+
+.price-list-section p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.price-table {
+    overflow-x: auto; /* Pro případ, že tabulka bude příliš široká na menších obrazovkách */
+}
+
+.price-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.price-table th, .price-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.price-table th {
+    background-color: #eee;
+    font-weight: bold;
+    color: #333;
+}
+
+.price-table tbody tr:last-child td {
+    border-bottom: none; /* Odstranění spodní linky z posledního řádku */
+}
+
+.price-table tbody tr:nth-child(even) {
+    background-color: #f4f4f4; /* Volitelný střídavý barevný pruh */
+}
+
+.price-table td:last-child {
+    text-align: right; /* Zarovnání ceny doprava */
+    font-weight: bold;
+}
+
+.price-list-section .note {
+    font-style: italic;
+    color: #777;
+    text-align: center;
+}
