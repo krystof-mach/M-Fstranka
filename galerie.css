@@ -1,0 +1,86 @@
+/* galerie.css - styly pro galerie.html */
+
+.gallery-section {
+    background-color: #f4f4f4; /* Světle šedé pozadí */
+    padding: 4rem 0;
+}
+
+.gallery-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.gallery-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333; /* Tmavě šedý nadpis */
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responzivní grid */
+    gap: 1.5rem; /* Mezery mezi obrázky */
+}
+
+.gallery-item {
+    background-color: #fff; /* Bílé pozadí pro položky galerie */
+    border-radius: 8px;
+    overflow: hidden; /* Oříznutí obsahu zaoblenými rohy */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Jemný stín */
+    transition: transform 0.3s ease; /* Animace pro hover efekt */
+}
+
+.gallery-item:hover {
+    transform: scale(1.03); /* Jemné zvětšení při najetí myší */
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4; /* Poměr stran 16:9 - širokoúhlý */
+    object-fit: cover; /* Vyplnění prostoru s oříznutím */
+}
+@media (max-width: 768px) {
+    .gallery-section {
+        padding: 1.5rem 0; /* Even smaller padding on very small screens */
+    }
+
+    .gallery-section h2 {
+        font-size: 1.75rem; /* Further reduced heading size */
+        margin-bottom: 1rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Even smaller minimum column width */
+        gap: 0.5rem; /* Even smaller gap */
+    }
+
+    .gallery-item {
+        border-radius: 4px; /* Even smaller border-radius */
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Even subtler shadow */
+    }
+
+    .gallery-item:hover {
+        transform: scale(1.01); /* Even less scaling on hover */
+    }
+
+    .gallery-item img {
+        aspect-ratio: 4 / 3; /* Example: Slightly less square aspect ratio on very small screens */
+    }
+
+    header nav ul li {
+        display: block; /* Stack navigation links vertically on phones */
+        margin: 0.5rem 0; /* Adjust vertical spacing for stacked links */
+    }
+
+    header nav ul {
+        padding-bottom: 0.5rem; /* Add padding below stacked nav items */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Slightly smaller nav link font size */
+    }
+}
