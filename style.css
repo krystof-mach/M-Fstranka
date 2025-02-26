@@ -55,7 +55,10 @@
     margin: 0 auto;
     padding: 0 2rem;
 }
-
+.tlacitko{
+    position: relative;
+    top: 10px
+}
 .service-item {
     background-color: #f9f9f9;
     padding: 1.5rem;
@@ -93,8 +96,14 @@
 
 .gallery-grid img {
     border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+   
     transition: transform 0.3s ease;
+
+    aspect-ratio: 3 / 4; /* Set the desired aspect ratio (width / height) - 2:1 in this example */
+    object-fit: cover; /* Ensure the image covers the container, cropping as needed */
+    width: 100%;       /* Make sure the image takes full width of its grid cell */
+    height: 100%;      /* Make sure the image takes full height of its grid cell */
+    display: block;     /* Remove extra space below image */
 }
 
 .gallery-grid img:hover {
