@@ -70,17 +70,3 @@
     .gallery-item img {
         aspect-ratio: 4 / 3; /* Example: Slightly less square aspect ratio on very small screens */
     }
-
-    header nav ul li {
-        display: block; /* Stack navigation links vertically on phones */
-        margin: 0.5rem 0; /* Adjust vertical spacing for stacked links */
-    }
-
-    header nav ul {
-        padding-bottom: 0.5rem; /* Add padding below stacked nav items */
-    }
-
-    nav ul li a {
-        font-size: 0.9rem; /* Slightly smaller nav link font size */
-    }
-}
